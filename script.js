@@ -21,10 +21,15 @@ function getRandomInt(max) {
 function printLine() {
   let line = getRandomInt(rhetoric.length);
   let addLine = document.createElement("p");
+  let selectLines = document.querySelectorAll("p");
   if (pageBody.childElementCount === 4) {
-    pageBody.firstElementChild.remove();
+    selectLines[0].addEventListener("transitionend", function () {
+      pageBody.firstElementChild.remove();
+    });
+    selectLines[0].classList.add("scrollOut");
   }
   addLine.innerText = rhetoric[line];
+  addLine.classList.add("fade-in");
   pageBody.appendChild(addLine);
   console.log(rhetoric[line]);
 }
