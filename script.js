@@ -22,7 +22,7 @@ function printLine() {
   let line = getRandomInt(rhetoric.length);
   let addLine = document.createElement("p");
   let selectLines = document.querySelectorAll("p");
-  if (pageBody.childElementCount >= 4) {
+  if (pageBody.childElementCount >= 3) {
     selectLines[0].addEventListener("transitionend", function () {
       pageBody.firstElementChild.remove();
     });

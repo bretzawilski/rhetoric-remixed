@@ -50,7 +50,7 @@ body {
 }
 
 .scrollOut {
-  transform: translateX(80vw);
+  transform: translateX(100vw);
   opacity: 0;
 }
 
@@ -98,7 +98,7 @@ a {
   color: white;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 600px) {
   #container {
     display: flex;
     flex-direction: column;
@@ -111,5 +111,10 @@ a {
   #aristotle {
     justify-self: center;
     align-self: center;
+  }
+
+  lottie-player {
+    width: 150px;
+    height: 150px;
   }
 }
