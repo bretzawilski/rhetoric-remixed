@@ -117,4 +117,8 @@ a {
     width: 150px;
     height: 150px;
   }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
