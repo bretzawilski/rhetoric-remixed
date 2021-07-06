@@ -90,4 +90,10 @@ h1 {
   flex-shrink: 0;
   text-align: center;
   padding: 1rem;
+  background-color: rgb(87, 75, 44);
+  color: white;
+}
+
+a {
+  color: white;
 }
