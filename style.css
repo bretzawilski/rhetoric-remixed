@@ -97,3 +97,19 @@ h1 {
 a {
   color: white;
 }
+
+@media only screen and (max-width: 810px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer {
+    width: 100vw;
+  }
+  #aristotle {
+    justify-self: center;
+    align-self: center;
+  }
+}
