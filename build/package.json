@@ -1,0 +1,27 @@
+{
+  "name": "rhetoric-remixed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bretzawilski/rhetoric-remixed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bretzawilski/rhetoric-remixed/issues"
+  },
+  "homepage": "https://github.com/bretzawilski/rhetoric-remixed#readme",
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "snowpack": "^3.7.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
