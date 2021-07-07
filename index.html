@@ -18,18 +18,97 @@
     ></script>
   </head>
 
-  <body>
+  <body class="m-0 bg-yellow-100 flex flex-col h-full">
     <header>
-      <h1>Aristotle's Rhetoric, Remixed</h1>
-      <button id="pause-btn">Pause</button>
-      <button id="save-btn">Save Text</button>
-      <input id="set-length" />
-      <button id="set-length-btn">Set Length</button>
+      <h1 class="md:text-4xl text-2xl">Aristotle's Rhetoric, Remixed</h1>
+      <div class="flex justify-center gap-5">
+        <button
+          id="pause-btn"
+          class="
+            btn-primary
+            transition
+            duration-300
+            ease-in-out
+            focus:outline-none focus:shadow-outline
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-normal
+            py-2
+            px-4
+            mr-1
+            rounded
+            active:bg-blue-900
+            w-24
+          "
+        >
+          Pause
+        </button>
+        <button
+          id="save-btn"
+          class="
+            btn-primary
+            transition
+            duration-300
+            ease-in-out
+            focus:outline-none focus:shadow-outline
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-normal
+            py-2
+            px-4
+            mr-1
+            rounded
+            active:bg-blue-900
+          "
+        >
+          Save Text
+        </button>
+        <input
+          class="justify-end p-1 w-24 text-center pt-0 pb-0 h-auto"
+          type="number"
+          id="set-length"
+          placeholder="Length"
+          value="4"
+          min="1"
+        />
+        <button
+          id="set-length-btn"
+          class="
+            btn-primary
+            transition
+            duration-300
+            ease-in-out
+            focus:outline-none focus:shadow-outline
+            bg-blue-500
+            hover:bg-blue-700
+            text-white
+            font-normal
+            py-2
+            px-4
+            mr-1
+            rounded
+            active:bg-blue-900
+          "
+        >
+          Set Length
+        </button>
+      </div>
     </header>
 
     <div class="content">
-      <div id="container">
-        <div id="aristotle">
+      <div
+        id="container"
+        class="flex flex-col sm:grid md:gap-1 mr-10 ml-10 grid-cols-2"
+      >
+        <div
+          id="aristotle"
+          class="
+            place-self-center
+            sm:col-start-1 sm:col-end-2 sm:justify-self-center sm:self-start
+          "
+        >
           <div>
             <lottie-player
               src="https://assets9.lottiefiles.com/packages/lf20_70kkvhfz.json"
@@ -37,16 +116,38 @@
               speed="1"
               loop
               autoplay
+              class="w-52 md:w-full"
             ></lottie-player>
           </div>
         </div>
-        <div id="rhetoric"></div>
+        <div
+          id="rhetoric"
+          class="
+            flex flex-col
+            gap-3
+            p-2
+            col-start-2 col-end-3
+            self-auto
+            sm:mt-6
+          "
+        ></div>
       </div>
     </div>
 
     <footer>
-      <div class="footer">
-        Designed by <a href="https://bret.design/">Bret Zawilski</a>
+      <div class="footer bg-amber">
+        Designed by
+        <a
+          href="https://bret.design/"
+          class="
+            underline
+            transition
+            duration-300
+            ease-in-out
+            hover:text-blue-400
+          "
+          >Bret Zawilski</a
+        >
       </div>
     </footer>
 

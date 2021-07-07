@@ -5,15 +5,17 @@ const setLengthBtn = document.getElementById("set-length-btn");
 setLengthBtn.addEventListener("click", () => {
   pageBody.innerHTML = "";
   lineLength = Number(setLength.value);
-  setLength.value = null;
+  // setLength.value = 1;
   initialRead();
 });
 console.log(hi);
 pauseBtn.addEventListener("click", () => {
   if (!pause) {
     pause = true;
+    pauseBtn.innerText = "Resume";
   } else {
     pause = false;
+    pauseBtn.innerText = "Pause";
     infiniteRead();
   }
 });
@@ -58,11 +60,16 @@ function printLine() {
       pageBody.firstElementChild.remove();
     });
     selectLines[0].classList.add("scrollOut");
+    setTimeout(addBlock, 500);
+  } else {
+    addBlock();
   }
-  addLine.innerText = rhetoric[line];
-  addLine.classList.add("fade-in");
-  pageBody.appendChild(addLine);
-  console.log(rhetoric[line]);
+  function addBlock() {
+    addLine.innerText = rhetoric[line];
+    addLine.classList.add("fade-in");
+    pageBody.appendChild(addLine);
+    console.log(rhetoric[line]);
+  }
 }
 
 function infiniteRead() {

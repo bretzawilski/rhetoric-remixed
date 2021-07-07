@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -10,31 +14,11 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: rgb(255, 241, 203);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  /* background-color: rgb(255, 241, 203); */
+  /* height: 100%; */
+  /* display: flex; */
+  /* flex-direction: column; */
   font-family: "Gentium Book Basic", serif;
-}
-
-#container {
-  display: grid;
-  margin: 0 10%;
-  gap: 10px;
-  grid-template-columns: 1.25fr 2fr;
-}
-
-#aristotle {
-  grid-column: 1/2;
-  justify-self: center;
-}
-
-#rhetoric {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 2/3;
 }
 
 #container p {
@@ -76,7 +60,7 @@ h1 {
   text-align: center;
   font-size: 2rem;
   width: 100vw;
-  background-color: rgb(255, 241, 203);
+  /* background-color: rgb(255, 241, 203); */
   margin-top: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -90,7 +74,6 @@ h1 {
   flex-shrink: 0;
   text-align: center;
   padding: 1rem;
-  background-color: rgb(87, 75, 44);
   color: white;
 }
 
@@ -98,27 +81,6 @@ a {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  #container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer {
-    width: 100vw;
-  }
-  #aristotle {
-    justify-self: center;
-    align-self: center;
-  }
-
-  lottie-player {
-    width: 150px;
-    height: 150px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
 }
