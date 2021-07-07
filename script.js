@@ -8,6 +8,23 @@ setLengthBtn.addEventListener("click", () => {
   // setLength.value = 1;
   initialRead();
 });
+const modal = document.getElementById("modal");
+// modal.addEventListener("click", () => {
+//   modal.classList.toggle("hidden");
+// });
+const textArea = document.getElementById("text-area");
+const saveBtn = document.getElementById("save-btn");
+saveBtn.addEventListener("click", () => {
+  pause = true;
+  pauseBtn.innerText = "Resume";
+  modal.classList.toggle("hidden");
+  textArea.innerText = saveText();
+});
+
+const closeBtn = document.getElementById("close-btn");
+closeBtn.addEventListener("click", () => {
+  modal.classList.toggle("hidden");
+});
 
 pauseBtn.addEventListener("click", () => {
   if (!pause) {
