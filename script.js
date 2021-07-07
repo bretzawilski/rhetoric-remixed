@@ -90,5 +90,5 @@ function initialRead() {
   }
 }
 
-setTimeout(initialRead, 100);
+setTimeout(initialRead, 1000);
 setTimeout(infiniteRead, 5000);
