@@ -19,9 +19,13 @@
   </head>
 
   <body>
-    <nav>
+    <header>
       <h1>Aristotle's Rhetoric, Remixed</h1>
-    </nav>
+      <button id="pause-btn">Pause</button>
+      <button id="save-btn">Save Text</button>
+      <input id="set-length" />
+      <button id="set-length-btn">Set Length</button>
+    </header>
 
     <div class="content">
       <div id="container">
@@ -39,8 +43,11 @@
         <div id="rhetoric"></div>
       </div>
     </div>
-    <footer class="footer">
-      Designed by <a href="https://bret.design/">Bret Zawilski</a>
+
+    <footer>
+      <div class="footer">
+        Designed by <a href="https://bret.design/">Bret Zawilski</a>
+      </div>
     </footer>
 
     <script defer src="script.js"></script>
