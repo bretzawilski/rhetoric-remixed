@@ -8,7 +8,7 @@ setLengthBtn.addEventListener("click", () => {
   setLength.value = null;
   initialRead();
 });
-
+console.log(hi);
 pauseBtn.addEventListener("click", () => {
   if (!pause) {
     pause = true;
